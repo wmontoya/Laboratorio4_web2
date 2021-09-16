@@ -1,0 +1,13 @@
+CREATE TABLE `tbl_productos` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`codigo` VARCHAR(8) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`nombre` VARCHAR(64) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`precio` DECIMAL(6,2) NULL DEFAULT NULL,
+	`cantidad` INT(11) NULL DEFAULT NULL,
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=3
+;
+
